@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    height: 100vh;
+    margin: 0;
+}
+header {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+h1 {
+    margin: 0;
+}
+p, .gen {
+    color: gray;
+    margin-top: 5px;
+}
+hr.header {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid gray;
+}
+hr.hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid gray;
+}
+h2 {
+
+    color: black;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+label {
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+}
+input[type="text"], 
+input[type="email"], 
+textarea, 
+select {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+.name ,
+.contact ,
+.origin ,
+.Country,
+.gender,
+.gen,
+.startdate {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.name .lname,
+.gen,
+.contact  .email,
+.origin .state,
+.Country .country,
+.gender .dob,
+.startdate .title {
+    margin-left: 20px;
+}
+.name div,
+.gen,
+.contact div,
+.origin div,
+.Country div,
+.gender .gender,
+.startdate div {
+    width: 48%;
+}
+.dob {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dob div {
+    width: 32%;
+}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
