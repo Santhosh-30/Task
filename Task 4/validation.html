@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Data Sheet</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <script src="Jquery.js"></script>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="Jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <div class="container mt-5">
+    <div class="card-header">
+      <h3 class="card-title">Personal Data Sheet</h3>
+      <p>Enter details on the form below</p>
+    </div>
+    <div class="card-body">
+      <form id="signup" action="#" method="get" onsubmit="validateform()">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="fname"><strong>First Name</strong></label>
+            <input type="text" id="fname" class="form-control">
+            <div id="fname_error" class="text-danger"></div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lname"><strong>Last Name</strong></label>
+            <input type="text" id="lname" class="form-control">
+            <div id="lname_error" class="text-danger"></div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="mobile"><strong>Mobile Number</strong></label>
+            <input type="text" id="mobile" class="form-control" placeholder="(000) 000-0000" />
+            <div id="mobile_error" class="text-danger"></div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email" style="font-weight: bold;font-size: 16px;">E-mail</label>
+            <input type="email" id="email" class="form-control" placeholder="ex: yourname@gmail.com" />
+            <div id="email_error" class="text-danger"></div>
+            <p style="color: grey;font-weight: normal;">example@example.com</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address"><strong>Address</strong></label>
+          <input type="text" id="address" class="form-control" />
+          <div id="address_error" class="text-danger" style="font-weight: normal"></div>
+          <p style="color: grey;font-weight: normal;">Street Address</p>
+        </div>
+        <div class="form-group">          
+          <input type="text" id="address2" class="form-control" />
+          <div id="address2_error" class="text-danger" style="font-weight: normal"></div>
+          <p style="color: grey;font-weight: normal;">Address Line2</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" id="city" class="form-control" />
+            <div id="city_error" class="text-danger" style="font-weight: normal"></div>
+            <p style="color: grey;font-weight: normal;">City</p>
+          </div>
+          <div class="form-group col-md-6">
+            <input type="text" id="state" class="form-control" />
+            <div id="state_error" class="text-danger" style="font-weight: normal"></div>
+            <p style="color: grey;font-weight: normal;">State / Province</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" id="zip" class="form-control" />
+            <div id="zip_error" class="text-danger" style="font-weight: normal"></div>
+            <p style="color: grey;font-weight: normal;">Postal / Zip Code</p>
+          </div>
+          <div class="form-group col-md-6">
+            <select name="country" id="country" class="form-control">
+              <option value=""></option>
+              <option value="India">India</option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="SriLanka">SriLanka</option>
+              <option value="Bangladesh">Bangladesh</option>
+            </select>
+            <p style="color: grey;font-weight: normal;">Country</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="gender"><strong>Gender</strong></label>
+            <select name="gender" id="gender" class="form-control">
+              <option value="#"></option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="rnts">Rather Not to Say</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="month"><strong>Birth Date</strong></label>
+            <div class="form-row">
+              <div class="form-group col">
+                <select name="month" id="month" class="form-control"></select>
+              </div>
+              <div class="form-group col">
+                <select name="Day" id="day" class="form-control"></select>
+              </div>
+              <div class="form-group col">
+                <select name="Year" id="year" class="form-control"></select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="startDate">Start Date</label>
+              <div class="form-row">
+                  <div class="form-group col">
+                      <select type="text" class="form-control" id="sday" ></select>
+                      <div id="sday_error" class="text-danger" style="font-weight: normal;"></div>
+                      <p style="color: grey;font-weight: normal;" >Day</p>
+                  </div>
+                  <div class="form-group col">
+                      <input type="text" class="form-control" id="smonth" >
+                      <div id="smonth_error" class="text-danger" style="font-weight: normal;"></div>
+                      <p style="color: grey;font-weight: normal;">Month</p>
+                  </div>
+                  <div class="form-group col">
+                      <input type="text" class="form-control" id="syear" >
+                      <div id="syear_error" class="text-danger" style="font-weight: normal" ></div>
+                      <p style="color: grey;font-weight: normal;">Year</p>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group col-md-6">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" >
+              <div id="title_error" class="text-danger" style="font-weight: normal;"></div>
+
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="info" >Additional Information</label>
+        <textarea class="form-control" id="info" rows="3" placeholder="Type here"></textarea>
+        <div id="info_error" class="text-danger" style="font-weight: normal;"></div>
+
+      </div>
+      <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-success" >Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
